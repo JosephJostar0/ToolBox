@@ -3,7 +3,7 @@
 ### docker run
 > docker run [options] [image] [command] [args...]
 
-> docker run [image]
+> docker run [image]:[version]
 
 Run a container from an image.  
 If the image is not present on the host, it will go out to Docker hub and pull that image down.
@@ -11,6 +11,16 @@ If the image is not present on the host, it will go out to Docker hub and pull t
 > docker run -d [image]
 
 Run the container in detached mode. 
+
+> docker run -it [image]
+
+Opening an interactive shell session within the container.
+
+> dockedr run -p [port1]:[port2] [image]
+
+Publishes a port from a container to the host machine, making it accessible from outside the container.  
+port1: The port on the host machine that you want to expose.  
+port2: The port inside the container that you want to map to port1.
 
 ### docker ps
 > docker ps
@@ -62,3 +72,13 @@ Stop a running container.
 > docker start [container]
 
 Start a stop container.
+
+### docker inspect
+> docker inspect [container]
+
+Returns all details of a container in a JSON format.
+
+### docker logs
+> docker logs [container]
+
+Displays the last 100 lines of logs from a specific container.
