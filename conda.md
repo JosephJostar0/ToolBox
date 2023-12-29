@@ -1,55 +1,55 @@
 # conda
 
 ### conda create
-> conda create --name [env_name] python=[version]
+- conda create --name [env_name] python=[version]
 
-Create an environment with a specific Python version.
+    Create an environment with a specific Python version.
 
 ### conda activate & deactivate
-> conda activate [env_name]
+- conda activate [env_name]
 
-Activate an environment.
+    Activate an environment.
 
-> conda deactivate
+- conda deactivate
 
-Deactivate the current environment.
+    Deactivate the current environment.
 
 ### conda install & update
-> conda install [package_name]=[version]
+- conda install [package_name]=[version]
 
-Install a specific version of a package.
+    Install a specific version of a package.
 
-> conda install --file [requirements.txt]
+- conda install --file [requirements.txt]
 
-Install all dependencies from a requirements.txt file.
+    Install all dependencies from a requirements.txt file.
 
-> conda update [package_name] / --all
+- conda update [package_name] / --all
 
-Update a specific package / all installed packages.
+    Update a specific package / all installed packages.
 
-> conda install -c conda-forge [package_name]=[version]
+- conda install -c conda-forge [package_name]=[version]
 
-Install a specific version of a package from conda-forge.
+    Install a specific version of a package from conda-forge.
 
 ### conda info & list
-> conda info --envs
+- conda info --envs
 
-View all created environments.
+    View all created environments.
 
-> conda list
+- conda list
 
-List all packages installed in the current enviroment.
+    List all packages installed in the current enviroment.
 
 ### conda search
-> conda search package_name
+- conda search package_name
 
-Search for a specific package in the Conda repository.
+    Search for a specific package in the Conda repository.
 
 ### conda remove
-> conda remove [package_name]
+- conda remove [package_name]
 
-Remove a specific package.
+    Remove a specific package.
 
-> conda env remove --name [env_name]
+- conda env remove --name [env_name]
 
-Remove a specific environment.
+    Remove a specific environment.
