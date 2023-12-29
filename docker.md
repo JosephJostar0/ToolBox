@@ -63,6 +63,10 @@
 
     Execute specific commands in the running container.
 
+- docker exec -it <container_id_or_name> /bin/bash
+
+    Open a shell in a running Docker container
+
 ### docker stop
 - docker stop [container]
 
